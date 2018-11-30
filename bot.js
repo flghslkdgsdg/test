@@ -26,5 +26,8 @@ client.user.setAvatar(argresult);
 if (message.content.startsWith(adminprefix + 'st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");//wennnn
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
-}
+    }
+
 });
+
+client.login(process.env.BOT_TOKEN);
